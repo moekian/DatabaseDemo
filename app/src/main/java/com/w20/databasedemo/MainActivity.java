@@ -2,6 +2,7 @@ package com.w20.databasedemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -58,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvViewEmployee:
                 // start activity to another activity to see the list of employees
-
+                Intent intent = new Intent(MainActivity.this, EmployeeActivity.class);
+                startActivity(intent);
                 break;
         }
     }

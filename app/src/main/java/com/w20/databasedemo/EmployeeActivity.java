@@ -50,6 +50,9 @@ public class EmployeeActivity extends AppCompatActivity {
             // show items in a listView
             // we use a custom adapter to show employees
 
+            EmployeeAdapter employeeAdapter = new EmployeeAdapter(this, R.layout.list_layout_employee, employeeList, mDatabase);
+            listView.setAdapter(employeeAdapter);
+
 
         }
     }
